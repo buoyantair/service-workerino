@@ -3,7 +3,10 @@ var urlsToCache = [
   '/',
   '/style.css',
   '/script.js',
-  'https://fonts.googleapis.com/css?family=Black+Han+Sans|Raleway'
+  'https://fonts.googleapis.com/css?family=Black+Han+Sans|Raleway',
+  'https://cdn.glitch.com/1d30cd71-d8ab-4636-b146-d41bf8b3bc52%2Fbeach-blue-coast-47424.jpg?1524419821588',
+  'https://cdn.glitch.com/1d30cd71-d8ab-4636-b146-d41bf8b3bc52%2Fagriculture-beautiful-country-596893.jpg?1524419822718',
+  'https://cdn.glitch.com/1d30cd71-d8ab-4636-b146-d41bf8b3bc52%2Fbeautiful-blue-eyes-close-up-609549.jpg?1524419821793',
 ];
 
 self.addEventListener('install', function(event) {
