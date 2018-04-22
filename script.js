@@ -7,5 +7,8 @@ if ('serviceWorker' in navigator) {
       // Registration failed :(
       console.log('ServiceWorker registration failed: ', err);
     })
+    
+    ServiceWorkerGlobalScope.skipWaiting();
   });
 }
+

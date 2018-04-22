@@ -5,11 +5,11 @@ body {
   display: grid;
   grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-template-columns: 0.2fr auto 0.2fr;
-  background: #BBBAC6;
+  background: #C7EFCF;
 }
 
-main {
-  background: #E2E2E2;
+.page {
+  background: #EEF5DB;
   height: 100vh;
   grid-column: 2;
   grid-row: 2;
