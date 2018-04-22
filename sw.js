@@ -11,7 +11,6 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('opened cache');
-        
         return cache.addAll(urlsToCache);
       })
   );
@@ -25,7 +24,7 @@ self.addEventListener('fetch', function(event) {
         if (response) {
           return response;
         }
-        
+
         var fetchRequest = event.request.clone();
                       
         return fetch(fetchRequest).then(function(response) {
