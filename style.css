@@ -48,3 +48,31 @@ article header {
 article p {
   font-size: 16px;
 }
+
+article.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+
+article.gallery figure {
+  background: #F3EFE0;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+article.gallery figure img {
+  height: 300px;
+  width: 300px;
+}
+
+article.gallery figcaption a {
+  color: initial;
+  text-decoration: none;
+}
+
+article.gallery figcaption a:hover {
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
