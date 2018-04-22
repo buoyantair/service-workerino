@@ -28,7 +28,21 @@ self.addEventListener('fetch', function(event) {
         
         var fetchRequest = event.request.clone();
                       
-        return fetch(fetchRequest).then(f));
+        return fetch(fetchRequest).then(function(response) {
+         // Check validity
+          if (!response || response.status !== 200 || response.type !== 'basic') {
+            return response;
+          }
+          
+          var responseToCache = response.clone();
+          
+          caches.open(CACHE_NAME)
+            .then(function(cache) {
+              cache.put(event.request, responseToCache);
+            });
+          
+          return response;
+        });
       })
   );
 });
