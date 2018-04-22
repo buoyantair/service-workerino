@@ -4,14 +4,14 @@ body {
   width: 100%;
   
   display: grid;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
-  grid-template-columns: 0.2fr minmax(300px, 80%) 0.2fr;
+  grid-template-rows: 50px auto 50px;
+  grid-template-columns: auto minmax(300px, 80%) auto;
   background: #C7EFCF;
 }
 
 .page {
   background: #EEF5DB;
-  height: 100vh;
+  min-height: 100px;
   grid-column: 2;
   grid-row: 2;
 }
