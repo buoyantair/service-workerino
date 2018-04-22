@@ -1,3 +1,18 @@
+var CACHE_NAME = 'my-site-cache-v1';
+var urlsToCache = [
+  '/',
+  '/style.css',
+  '/script.js',
+];
+
 self.addEventListener('install', function(event) {
-  console.log('Hellla fun, just installed!');
+  // Perform installation
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('opened cache');
+        
+        return cache.addAll(urlsToCache);
+      })
+  )
 });
