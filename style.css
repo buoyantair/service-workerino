@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   
   display: grid;
   grid-template-rows: 0.1fr 1fr 0.1fr;
-  grid-template-columns: 0.2fr auto 0.2fr;
+  grid-template-columns: 0.2fr minmax(300px, 80%) 0.2fr;
   background: #C7EFCF;
 }
 
@@ -19,7 +20,7 @@ body {
   position: absolute;
   font-family: 'Black Han Sans', sans-serif;
   font-size: 50px;
-  transform: translateX(-5%) translateY(-50%) rotateZ(-5deg);
+  transform: translateX(5%) translateY(-50%) rotateZ(-5deg);
   color: #E63462;
 }
 
@@ -31,4 +32,19 @@ body {
 main {
   margin: 20px;
   margin-top: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+article {
+  background: #F1E8B8;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+article header {
+  font-size: 30px;
+}
+
+article p {
+  font-size: 16px;
 }
