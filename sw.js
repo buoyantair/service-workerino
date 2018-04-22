@@ -3,6 +3,7 @@ var urlsToCache = [
   '/',
   '/style.css',
   '/script.js',
+  'https://fonts.googleapis.com/css?family=Black+Han+Sans|Raleway'
 ];
 
 self.addEventListener('install', function(event) {
